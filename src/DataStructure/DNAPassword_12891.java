@@ -1,3 +1,5 @@
+package DataStructure;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -35,6 +37,8 @@ public class DNAPassword_12891 {
             else if(arr[j]=='T') cnt[3]++;
             j++;
         }
+        if(cnt[0]>=check[0] && cnt[1]>=check[1] && cnt[2]>=check[2] && cnt[3]>=check[3]) result++;
+
 
         //Add, Remove 메서드 구현하기  -> 왜 메서드를 구현해야 할까
 
