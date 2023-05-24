@@ -1,4 +1,4 @@
-package DataStructure;
+package DataStructure.SectionSum;
 
 import java.util.Scanner;
 
