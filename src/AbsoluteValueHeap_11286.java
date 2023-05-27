@@ -20,7 +20,12 @@ public class AbsoluteValueHeap_11286 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
         int N = Integer.parseInt(br.readLine());
+        int[] arr = new int[N];
+        for(int i=0;i<N;i++) arr[i]=Integer.parseInt(br.readLine());
         PriorityQueue<Integer> absPQ = new PriorityQueue<>();
+        //큐에다가 (배열의 인덱스, 절댓값)로 구성된 노드를 저장, 큐의 우선순위는 절댓값에 따라 결정됨
+        //만약 같은 수가 여러개일 때에는 arr[인덱스]로 가서 확인 -> 음수가 있으면 음수 개수만큼 먼저 출력
+        
 
     }
 }
