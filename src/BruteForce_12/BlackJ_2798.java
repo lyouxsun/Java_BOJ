@@ -1,4 +1,4 @@
-package guitar;
+package BruteForce_12;
 
 import java.util.Scanner;
 

@@ -1,20 +1,9 @@
+package DataStructure.Re;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.PriorityQueue;
-
-/**
- * 1. 최소힙 만들기 (배열 이용)
- * 2. 음수->tmp=-1*input , 양수->tmp=input 으로
- *    tmp값에 따라 Heap에 input값을 그대로 저장
- * 3. input의 절댓값이 같을 때 설정해주기
- *    -> 둘중에 input값이 더 작은걸 왼쪽에 저장 (나중에 왼쪽부터 출력)
- *    -> 그럼 |input|으로 첫번째 정렬하고
- *    -> input으로 세부정렬ㄱ
- * 4. 출력
- *    - 만약 힙이 비었으면 0출력
- *    - 아니라면 루트노드 출력 후 제거
- */
 
 /**
  * 우선순위 큐 사용
@@ -35,6 +24,8 @@ public class AbsoluteValueHeap_11286 {
                 return o1>o2?1:-1;      //절댓값이 같을 때 -> 음수 먼저 정렬
             else
                 return first_abs - second_abs;//절댓값이 다를 때 -> 절댓값을 기준으로 정렬
+                //first_abs > second_abs : 양수 리턴 -> 자리 바꿈
+                //first_abs < second_abs : 음수 리턴 -> 자리 유지
         });
 
         for(int i=0;i<N;i++){
