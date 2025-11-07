@@ -1,6 +1,6 @@
 package graph.pathSearch.dfs;
 
-public class P_targetNumber {
+public class PG_타겟넘버 {
     int answer = 0;
     int size, t;
     public int solution(int[] numbers, int target) {
