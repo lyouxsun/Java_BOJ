@@ -20,7 +20,7 @@ public class PG_네트워크 {
     }
 
     void dfs(int c, int[][] computers) {
-        for (int i = 0; i < num; i++) {
+        for(int i = 0; i < num; i++) {
             if (computers[c][i] == 1 && v[i] == 0) {
                 v[i] = 1;
                 dfs(i, computers);
