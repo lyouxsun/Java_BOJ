@@ -1,4 +1,4 @@
-package graph.graphStructure.unionFind;
+package graph.graph_structure.union_find;
 
 import java.io.BufferedReader;
 import java.io.IOException;

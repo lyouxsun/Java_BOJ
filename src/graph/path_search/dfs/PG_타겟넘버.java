@@ -1,4 +1,4 @@
-package graph.pathSearch.dfs;
+package graph.path_search.dfs;
 
 public class PG_타겟넘버 {
     int answer = 0;

@@ -1,4 +1,4 @@
-package graph.pathSearch.dfs;
+package graph.path_search.dfs;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,8 +6,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.StringTokenizer;
-
-import static java.lang.Math.max;
 
 
 // bfs + BRUTE FORCE
@@ -46,7 +44,7 @@ public class BOJ_2589 {
         for (int i = 0; i < H; i++) {
             for (int j = 0; j < W; j++) {
                 if (graph[i][j] == 1) {
-                    answer = max(answer, bfs(i, j));
+                    answer = Math.max(answer, bfs(i, j));
                 }
             }
         }
@@ -61,7 +59,7 @@ public class BOJ_2589 {
             }
         }
 
-       Queue<Pair> q = new ArrayDeque<>();
+        Queue<Pair> q = new ArrayDeque<>();
         q.add(new Pair(y, x));
         depth[y][x] = 0;
         int maxPath = 0;
@@ -91,7 +89,7 @@ public class BOJ_2589 {
                     q.add(new Pair(ny, nx));
                     visited[ny][nx] = 1;
                 }
-                maxPath = max(depth[ny][nx], maxPath);
+                maxPath = Math.max(depth[ny][nx], maxPath);
             }
         }
         return maxPath;

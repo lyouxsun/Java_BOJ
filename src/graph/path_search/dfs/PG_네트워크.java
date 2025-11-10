@@ -1,4 +1,4 @@
-package graph.pathSearch.dfs;
+package graph.path_search.dfs;
 
 public class PG_네트워크 {
     int[] v;

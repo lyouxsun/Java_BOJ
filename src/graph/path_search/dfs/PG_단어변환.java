@@ -1,4 +1,4 @@
-package graph.pathSearch.dfs;
+package graph.path_search.dfs;
 
 import java.util.HashMap;
 import java.util.Map;
