@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-public class BOJ_1941 {
+public class BOJ_1941_bruteForce {
     static int[][] seat = new int[5][5];
     static int[][] direction = new int[][]{{-1, 0}, {0, -1}, {1, 0}, {0, 1}};
     static Set<Set<Point>> answers = new HashSet<>();
